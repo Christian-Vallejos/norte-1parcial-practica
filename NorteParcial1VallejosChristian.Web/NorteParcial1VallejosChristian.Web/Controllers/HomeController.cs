@@ -13,5 +13,10 @@ namespace NorteParcial1VallejosChristian.Web.Controllers
         {
             return View();
         }
+
+        public ActionResult Contact()
+        {
+            return View();
+        }
     }
 }
