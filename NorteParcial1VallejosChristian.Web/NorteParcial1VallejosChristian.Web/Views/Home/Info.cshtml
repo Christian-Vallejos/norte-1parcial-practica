@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewBag.Title = "Info";
+}
+
+<h2>Info</h2>
+
+<p >1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc semper ullamcorper mi sed dignissim. Nulla magna lectus, auctor sed magna in, egestas porttitor nunc. Duis tincidunt nisl sed sodales maximus. Mauris facilisis varius iaculis. Sed scelerisque, libero non ullamcorper pellentesque, elit sem dignissim leo, finibus mollis elit turpis quis nisl. Phasellus ultricies ex non ligula tempus lacinia. Vivamus lobortis nibh id odio vehicula, nec posuere sem placerat. Nam vel fringilla dolor. Integer volutpat mollis libero, lacinia blandit ex ultrices non. Donec porta lacus sem, eget placerat diam vestibulum ut. Maecenas sit amet libero vitae augue varius rutrum. Nunc vel dui libero. Aliquam eget justo ac tellus placerat convallis eu eu ipsum.</p> 
+<hr/>
+
+<p>2.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc semper ullamcorper mi sed dignissim. Nulla magna lectus, auctor sed magna in, egestas porttitor nunc. Duis tincidunt nisl sed sodales maximus. Mauris facilisis varius iaculis. Sed scelerisque, libero non ullamcorper pellentesque, elit sem dignissim leo, finibus mollis elit turpis quis nisl. Phasellus ultricies ex non ligula tempus lacinia. Vivamus lobortis nibh id odio vehicula, nec posuere sem placerat. Nam vel fringilla dolor. Integer volutpat mollis libero, lacinia blandit ex ultrices non. Donec porta lacus sem, eget placerat diam vestibulum ut. Maecenas sit amet libero vitae augue varius rutrum. Nunc vel dui libero. Aliquam eget justo ac tellus placerat convallis eu eu ipsum.</p>
+<hr/>
+
+<button id="btnCambiarColor" class="button-success"> Cambiar Color</button>
+<button id="btnDefecto" class="button-error"> Defecto</button>
+<hr/>
+<button id="btnhide" class="button-error"> Defecto</button>
+
+@section  scripts
+{
+    <script>
+        $("#btnCambiarColor").click(function () {
+            $("p").addClass("color-success");
+        });
+
+
+        $("#btnDefecto").click(function () {
+            $("p").removeClass("color-success");
+        });
+
+        $("#btnhide").click(function () {
+            $("#pub").hide(); $("#btnhide").text("Pepepe")
+      
+        });
+        
+
+    </script>
+    
+    
+    
+    }

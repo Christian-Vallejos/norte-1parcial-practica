@@ -86,3 +86,12 @@ footer {
 .button-error {
     background: rgb(255, 0, 0);
 }
+
+
+.color-success {
+    background: rgb(28,185,65);
+}
+
+.color-error {
+    background: rgb(255, 0, 0);
+}
